@@ -23,6 +23,7 @@ namespace LAB_05
             _key2 = GetKey(key2);
         }
 
+        // BAD ALGORITHM :(
         private List<int> GetKey(string key)
         {
             var charList = _alphabetArray.Intersect(key).ToList();
@@ -30,6 +31,20 @@ namespace LAB_05
             foreach (var ch in key)
             {
                 result.Add(charList.IndexOf(ch));
+            }
+            for (int i = 0; i < result.Count; i++)
+            {
+                var nums = result.FindAll(x => x == result[i]);
+                if (nums.Count > 1)
+                {
+                    while (nums.Count > 1)
+                    {
+                        int index = result.FindLastIndex(x => x == nums[0]);
+                        result[index]++;
+                        nums = result.FindAll(x => x == result[i]);
+                    }
+                    
+                }
             }
             return result;
         }

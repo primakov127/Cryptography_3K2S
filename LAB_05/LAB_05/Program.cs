@@ -14,7 +14,7 @@ namespace LAB_05
             //string encrypted = crypt.Crypt(crypted);
             //Console.WriteLine(crypted);
             //Console.WriteLine(encrypted);
-            MultiPermCrypt permCrypt = new MultiPermCrypt(russianAlphabet, "слова", "крипто");
+            MultiPermCrypt permCrypt = new MultiPermCrypt(russianAlphabet, "сооолово", "крипто");
             //Console.WriteLine(permCrypt.Encrypt("примаков"));
             string crypted = permCrypt.Encrypt("примаков");
             string encrypted = permCrypt.Decrypt(crypted);
