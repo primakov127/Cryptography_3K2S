@@ -46,6 +46,13 @@ namespace DesktopClient
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -201,11 +208,76 @@ namespace DesktopClient
             this.label4.TabIndex = 16;
             this.label4.Text = "Time";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(668, 493);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(30, 23);
+            this.textBox4.TabIndex = 17;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(704, 493);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(30, 23);
+            this.textBox5.TabIndex = 18;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(740, 493);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(30, 23);
+            this.textBox6.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(737, 522);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 15);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "posR";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(697, 522);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 15);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "posM";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(666, 522);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 15);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "posL";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(668, 463);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(102, 23);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Enigma";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 597);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -249,6 +321,13 @@ namespace DesktopClient
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button9;
     }
 }
 

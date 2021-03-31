@@ -1,5 +1,6 @@
 ﻿using DesktopClient.Crypto.LAB_04;
 using DesktopClient.Crypto.LAB_05;
+using DesktopClient.Crypto.LAB_06;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,6 +91,18 @@ namespace DesktopClient
             var crypt = new MultiPermCrypt(textBox3.Text, textBox1.Text, textBox2.Text);
             var time = Stopwatch.StartNew();
             richTextBox2.Text = crypt.Decrypt(richTextBox1.Text);
+            time.Stop();
+            label4.Text = time.Elapsed.TotalSeconds.ToString();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Enigma enigma = new Enigma();
+            int offsetR = Int32.Parse(textBox6.Text) % 26;
+            int offsetM = Int32.Parse(textBox5.Text) % 26;
+            int offsetL = Int32.Parse(textBox4.Text) % 26;
+            var time = Stopwatch.StartNew();
+            richTextBox2.Text = enigma.Crypt(richTextBox1.Text, offsetR, offsetM, offsetL);
             time.Stop();
             label4.Text = time.Elapsed.TotalSeconds.ToString();
         }
