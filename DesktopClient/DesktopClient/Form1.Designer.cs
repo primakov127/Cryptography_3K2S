@@ -53,6 +53,17 @@ namespace DesktopClient
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -202,7 +213,7 @@ namespace DesktopClient
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(260, 570);
+            this.label4.Location = new System.Drawing.Point(260, 657);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 15);
             this.label4.TabIndex = 16;
@@ -266,11 +277,120 @@ namespace DesktopClient
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(11, 601);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(165, 23);
+            this.textBox7.TabIndex = 24;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 584);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 15);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Private Key";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(11, 646);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(165, 23);
+            this.textBox8.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 628);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 15);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Public Key";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(260, 558);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(145, 23);
+            this.button10.TabIndex = 28;
+            this.button10.Text = "Generate Knapsack keys";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(260, 588);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(66, 23);
+            this.button11.TabIndex = 29;
+            this.button11.Text = "Encrypt";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(332, 588);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(73, 23);
+            this.button12.TabIndex = 30;
+            this.button12.Text = "Decrypt";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(12, 695);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(164, 23);
+            this.textBox9.TabIndex = 31;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 677);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 15);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "RC4 Key";
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(424, 559);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(85, 23);
+            this.button13.TabIndex = 33;
+            this.button13.Text = "RC4 Encrypt";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(424, 588);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(85, 23);
+            this.button14.TabIndex = 34;
+            this.button14.Text = "Decrypt";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 597);
+            this.ClientSize = new System.Drawing.Size(925, 730);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -328,6 +448,17 @@ namespace DesktopClient
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
     }
 }
 
